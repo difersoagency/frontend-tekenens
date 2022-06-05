@@ -90,6 +90,32 @@ div.overlay{
     z-index: 0;
 }
 
+section.banner-images .overlay{
+    background-image: linear-gradient(to bottom, rgba(56, 175, 136, 1), rgba(117, 19, 93, 0));
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+section.banner-images .title-page h1 {
+    color: #FEE138;
+    font-size: 60px;
+    letter-spacing: 8px;
+
+}
+
+section.banner-images .title-page {
+    position: absolute;
+    margin-top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
 span.underline {
     width: 60%;
     height: 2px;
@@ -371,6 +397,84 @@ footer a {
     z-index: 999;
 }
 
+.about-sect {
+    margin-top: 28px;
+}
+
+.about-sect img {
+    border-radius: 15px;
+}
+
+.about-sect h2 span{
+    font-size: 38px;
+}
+
+.about-sect h2{
+    font-size: 38px;
+}
+
+.about-sect span {
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+.about-sect p {
+    margin-top: 25px;
+}
+
+.about-sect .row {
+
+    justify-content: space-between;
+}
+
+.our-team{
+margin-top: 86px;   
+}
+
+.our-team h2 {
+    letter-spacing: 5px;
+}
+
+.overlay-team{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(56, 175, 136, 1));
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.2s ease-in;
+}
+
+.overlay-team:hover {
+    opacity: 1;
+}
+
+.member {
+    padding: 0;
+}
+
+.text-overlay {
+    left: 45%;
+    transform: translateX(-50%);
+    top: 70%;
+    z-index: 999;
+    transition: all 0.2s ease-in;
+    opacity: 1;
+    margin-top: 200px;
+}
+
+.overlay-team:hover h2 , p {
+    margin-top: 200px;
+    opacity: 1;
+}
+
+
+
 /* Responsive - Mobile */
 @media only screen and (max-width: 767px) {
     .c1 {
@@ -400,6 +504,8 @@ footer a {
     }
     
   }
+
+  /* Responsive Tablet */
 
   @media only screen and (min-width: 768px) and (max-width: 1023px){
       .footer-web p , a{

@@ -34,3 +34,4 @@ Auth::routes();
 Route::view('/', 'pages.main')->name('main_page');
 Route::get('/home', [App\Http\Controllers\DashboardController::class, 'index'])->name('home');
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+Route::view('/about', 'pages.about')->name('about_page  ');
